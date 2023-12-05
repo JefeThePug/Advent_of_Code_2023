@@ -46,7 +46,6 @@ cubes, and 14 blue cubes. What is the sum of the IDs of those games?
 """
 
 from typing import List
-from itertools import islice
 
 
 def split_parts(s: str) -> int:

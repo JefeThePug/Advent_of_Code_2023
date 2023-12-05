@@ -32,7 +32,6 @@ What is the sum of the power of these sets?
 """
 
 from typing import List
-from itertools import islice
 from math import prod
 
 
