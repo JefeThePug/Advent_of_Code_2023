@@ -36,8 +36,7 @@ from math import prod
 
 
 def get_power(s: str) -> int:
-    game_id, blocks = s.split(":")
-    game_id = int(game_id.removeprefix("Game "))
+    _, blocks = s.split(":")
     blocks = blocks.translate(blocks.maketrans("","",",;")).split()
     
     maxvalues = {}
