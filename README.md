@@ -12,8 +12,10 @@ Included in each folder are:<br />
   cells, used for testing and calculating the result<br />
 - a python file (.py) for part 1 of the question<br />
 - a python file (.py) for part 2 of the question<br />
-- a text file (.txt) containing the input supplied by the website to <br />
-  analyze and use in deriving the challenge's solution<br />
+- a text file (.txt) containing the sample input supplied by the website<br />
+  to analyze and use in deriving the challenge's solution<br />
+* NOTE: Actual input is not shared at the request of the site.<br />
+  you can obtain your own input by registering an account on AoC.<br />
 
 Please do not cheat and plagiarize my solutions when completing the <br />
 challenges on your own. <br />

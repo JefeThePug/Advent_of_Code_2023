@@ -1,2 +1,2 @@
-Time:        47     98     66     98
-Distance:   400   1213   1011   1540
+Time:      7  15   30
+Distance:  9  40  200
