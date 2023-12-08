@@ -99,7 +99,7 @@ class Hand:
     def get_val(self, multiplier: int) -> int:
         return multiplier * self.bid
     
-    def __lt__(self, other: [Hand]) -> bool:
+    def __lt__(self, other: Hand) -> bool:
         if self.type == other.type:
             return self.hand < other.hand
         return self.type < other.type
