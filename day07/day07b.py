@@ -57,7 +57,7 @@ class Hand:
 def get_total(hands: List[Hand]) -> int:
     return sum(h.get_val(i) for i, h in enumerate(sorted(hands), 1))
     
-with open("data.txt") as f:
+with open("input.txt") as f:
     print(get_total(sorted(Hand(*hand.split()) for hand in f.read().strip().split("\n"))))
 
 #sum total is 251135960

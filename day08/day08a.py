@@ -43,7 +43,7 @@ Starting at AAA, follow the left/right instructions. How many steps are required
 
 from itertools import cycle
 
-with open("data.txt") as f:
+with open("input.txt") as f:
     directions = f.readline().replace("L", "0").replace("R", "1").strip()
     directions = cycle(map(int, list(directions)))
     nodes = map(lambda x: x.rstrip(")").split(" = ("), f.read().strip().split("\n"))

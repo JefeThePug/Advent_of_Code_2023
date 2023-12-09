@@ -46,7 +46,7 @@ that end with Z?
 from itertools import cycle
 from math import lcm
 
-with open("data.txt") as f:
+with open("input2.txt") as f:
     directions = f.readline().replace("L", "0").replace("R", "1").strip()
     directions = cycle(map(int, list(directions)))
     nodes = map(lambda x: x.rstrip(")").split(" = ("), f.read().strip().split("\n"))
