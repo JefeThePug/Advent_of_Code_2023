@@ -28,8 +28,8 @@ def get_dist(exp_c: int, exp_r: int, s: Tuple[int], e: Tuple[int]) -> int:
     ey, ex = e
     base_x = abs(sx - ex)
     base_y = abs(sy - ey)
-    a = sum([exp in range(*sorted([sy, ey])) for exp in exp_r]) * (multiplier - 1)
-    b = sum([exp in range(*sorted([sx, ex])) for exp in exp_c]) * (multiplier - 1)
+    a = sum(exp in range(*sorted([sy, ey])) for exp in exp_r) * (multiplier - 1)
+    b = sum(exp in range(*sorted([sx, ex])) for exp in exp_c) * (multiplier - 1)
     return base_x + base_y + a + b
     
 with open("input.txt") as f:
