@@ -54,13 +54,15 @@ Afterward, what is the total load on the north support beams?
 
 """
 
+from typing import Tuple
+
 class Rock:
-    def __init__(self, pos, space):
+    def __init__(self, pos: Tuple[int], space: str):
         self.y, self.x = pos
         self.rolling = space == "O"
         self.mark = space
         
-    def move(self):
+    def move(self) -> None:
         if self.rolling:
             self.y -= 1
 

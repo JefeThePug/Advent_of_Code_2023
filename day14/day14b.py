@@ -34,11 +34,11 @@ Run the spin cycle for 1000000000 cycles. Afterward, what is the total load on t
 import numpy as np
 
 
-def calculate(grid):
+def calculate(grid: np.ndarray) -> int:
     weights = np.array([[n]*grid.shape[1] for n in range(grid.shape[0], 0, -1)])
     return np.sum(np.where(grid == "O", weights, 0))
     
-def shift_up(grid):
+def shift_up(grid: np.ndarray) -> np.ndarray:
     for c in range(grid.shape[1]):
         rocks = np.where(grid[:, c] == "O")[0]
         for r in rocks:
