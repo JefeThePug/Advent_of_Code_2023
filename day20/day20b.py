@@ -70,4 +70,4 @@ for name, module in modules.items():
 
 print(begin(initial, modules))
     
-# total product is 247702167614647
+# minimum is 247702167614647
